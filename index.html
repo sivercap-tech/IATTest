@@ -22,6 +22,8 @@
       /* Prevent scrolling during test */
       body {
         overscroll-behavior: none;
+        /* Prevent double-tap zoom on buttons */
+        touch-action: manipulation;
       }
     </style>
   <script type="importmap">
@@ -38,10 +40,10 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
   <body class="bg-slate-900 text-slate-100 font-sans antialiased">
     <div id="root"></div>
+    <!-- Use relative path ./index.tsx for correct loading on GitHub Pages subpaths -->
     <script type="module" src="./index.tsx"></script>
-</body>
+  </body>
 </html>
