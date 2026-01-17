@@ -6,7 +6,7 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, (process as any).cwd(), '');
   return {
     plugins: [react()],
-    base: './', // Important for GitHub Pages
+    base: '/IATTest/',
     build: {
       outDir: 'dist',
     },
